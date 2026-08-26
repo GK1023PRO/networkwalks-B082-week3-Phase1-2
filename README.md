@@ -685,44 +685,46 @@ Place the W3-PM1 screenshots in chronological order under:
 ```text
 screenshots/W3-PM1/
 ```
+![W3-PM1 Evidence 1](screenshots/W3-PM1/1.png)
+![W3-PM1 Evidence 2](screenshots/W3-PM1/2.png)
+![W3-PM1 Evidence 3](screenshots/W3-PM1/3.png)
+![W3-PM1 Evidence 4](screenshots/W3-PM1/4.png)
+![W3-PM1 Evidence 5](screenshots/W3-PM1/5.png)
+![W3-PM1 Evidence 6](screenshots/W3-PM1/6.png)
+![W3-PM1 Evidence 7](screenshots/W3-PM1/7.png)
+![W3-PM1 Evidence 8](screenshots/W3-PM1/8.png)
+![W3-PM1 Evidence 9](screenshots/W3-PM1/9.png)
+![W3-PM1 Evidence 10](screenshots/W3-PM1/10.png)
+![W3-PM1 Evidence 11](screenshots/W3-PM1/11.png)
+![W3-PM1 Evidence 12](screenshots/W3-PM1/12.png)
+![W3-PM1 Evidence 13](screenshots/W3-PM1/13.png)
+![W3-PM1 Evidence 14](screenshots/W3-PM1/14.png)
+![W3-PM1 Evidence 15](screenshots/W3-PM1/15.png)
+![W3-PM1 Evidence 16](screenshots/W3-PM1/16.png)
+![W3-PM1 Evidence 17](screenshots/W3-PM1/17.png)
+![W3-PM1 Evidence 18](screenshots/W3-PM1/18.png)
+![W3-PM1 Evidence 19](screenshots/W3-PM1/19.png)
+![W3-PM1 Evidence 20](screenshots/W3-PM1/20.png)
+![W3-PM1 Evidence 21](screenshots/W3-PM1/21.png)
+![W3-PM1 Evidence 22](screenshots/W3-PM1/22.png)
+![W3-PM1 Evidence 23](screenshots/W3-PM1/23.png)
+![W3-PM1 Evidence 24](screenshots/W3-PM1/24.png)
+![W3-PM1 Evidence 25](screenshots/W3-PM1/25.png)
+![W3-PM1 Evidence 26](screenshots/W3-PM1/26.png)
+![W3-PM1 Evidence 27](screenshots/W3-PM1/27.png)
+![W3-PM1 Evidence 28](screenshots/W3-PM1/28.png)
+![W3-PM1 Evidence 29](screenshots/W3-PM1/29.png)
+![W3-PM1 Evidence 30](screenshots/W3-PM1/30.png)
+![W3-PM1 Evidence 31](screenshots/W3-PM1/31.png)
+![W3-PM1 Evidence 32](screenshots/W3-PM1/32.png)
+![W3-PM1 Evidence 33](screenshots/W3-PM1/33.png)
+![W3-PM1 Evidence 34](screenshots/W3-PM1/34.png)
+![W3-PM1 Evidence 35](screenshots/W3-PM1/35.png)
+![W3-PM1 Evidence 36](screenshots/W3-PM1/36.png)
+![W3-PM1 Evidence 37](screenshots/W3-PM1/37.png)
+![W3-PM1 Evidence 38](screenshots/W3-PM1/38.png)
+![W3-PM1 Evidence 39](screenshots/W3-PM1/39.png)
 
-Recommended filenames:
-
-```text
-01-PDF1-Protected-File.png
-02-PDF1-Hash1-Extraction.png
-03-PDF1-JTR-Password-Cracking.png
-04-PDF1-Recovered-Password.png
-05-PDF1-Password-Verification.png
-
-06-PDF2-Protected-File.png
-07-PDF2-Hash2-Extraction.png
-08-PDF2-JTR-Password-Cracking.png
-09-PDF2-Recovered-Password.png
-10-PDF2-Password-Verification.png
-
-11-PDF3-Protected-File.png
-12-PDF3-Hash3-Extraction.png
-13-PDF3-JTR-Password-Cracking.png
-14-PDF3-Recovered-Password.png
-15-PDF3-Password-Verification.png
-```
-
-The README image references should follow this pattern:
-
-```markdown
-![W3-PM1 - PDF1 Protected File](screenshots/W3-PM1/01-PDF1-Protected-File.png)
-![W3-PM1 - PDF1 Hash1 Extraction](screenshots/W3-PM1/02-PDF1-Hash1-Extraction.png)
-![W3-PM1 - PDF1 JTR Password Cracking](screenshots/W3-PM1/03-PDF1-JTR-Password-Cracking.png)
-
-![W3-PM1 - PDF2 Protected File](screenshots/W3-PM1/06-PDF2-Protected-File.png)
-![W3-PM1 - PDF2 Hash2 Extraction](screenshots/W3-PM1/07-PDF2-Hash2-Extraction.png)
-![W3-PM1 - PDF2 JTR Password Cracking](screenshots/W3-PM1/08-PDF2-JTR-Password-Cracking.png)
-
-![W3-PM1 - PDF3 Protected File](screenshots/W3-PM1/11-PDF3-Protected-File.png)
-![W3-PM1 - PDF3 Hash3 Extraction](screenshots/W3-PM1/12-PDF3-Hash3-Extraction.png)
-![W3-PM1 - PDF3 JTR Password Cracking](screenshots/W3-PM1/13-PDF3-JTR-Password-Cracking.png)
-```
 
 Use the shared hash files stored under:
 
