@@ -1,4 +1,3 @@
-# networkwalks-B082-week3-Phase1-2
 # PASSWORD SECURITY & PASSWORD CRACKING PHASE
 
 ### W3-PM-FINAL | CYBERSECURITY | NETWORKWALKS
@@ -154,29 +153,130 @@ I completed the additional Week 3 optional practical titled:
 
 **z. Optional Module Lab - JTR Password Cracking Lab v1 (AI-version)**
 
-The purpose of the optional activity was to reinforce the password-security and password-auditing concepts practiced during the main Week 3 modules.
+The purpose of this optional activity was to extend the password-security and password-cracking concepts practiced during W3-PM1 and W3-PM2 by introducing an **AI-assisted password-auditing workflow using Claude and HexStrike AI on Kali Linux**.
 
-The exercise provided additional practical experience with password cracking, candidate-password testing, result interpretation, and the importance of verifying automated findings before treating them as confirmed results.
+While W3-PM1 demonstrated password cracking directly with **John the Ripper (JTR)** and W3-PM2 demonstrated password recovery using the **NetworkWalks Hash Calculator and Password Cracker**, W3-OPTIONAL1 demonstrated how an AI assistant can interact with cybersecurity tools running inside a Kali Linux environment.
 
-The general password-auditing workflow reinforced during the optional module was:
+The main technologies used during this optional practical were:
+
+- **Kali Linux** – operating environment used for the cybersecurity laboratory.
+- **Claude** – AI assistant used to interact with and assist the password-cracking workflow.
+- **HexStrike AI** – security-tool integration layer used to connect the AI-assisted workflow with tools available in Kali Linux.
+- **John the Ripper (JTR)** – password-auditing tool used to perform the underlying password-recovery operations.
+- **Wordlists / candidate passwords** – candidate values used during the authorized password-auditing process.
+
+The AI-assisted architecture used during the exercise can be represented as:
 
 ```text
-Protected Resource
+Claude
+   ↓
+HexStrike AI
+   ↓
+Kali Linux
+   ↓
+John the Ripper
+   ↓
+Password-Recovery Operation
+```
+
+The password-cracking methodology followed the same fundamental process demonstrated during the previous Week 3 practical activities:
+
+```text
+Password-Protected Lab Resource
         ↓
-Password-Verification Information
+Extract Password-Verification Information
         ↓
-Prepare Hash
+Prepare JTR-Compatible Hash
         ↓
-Password-Auditing Tool
+Claude + HexStrike AI
+        ↓
+John the Ripper
         ↓
 Candidate-Password Testing
         ↓
 Recovered Password
         ↓
-Result Verification
+Manual Verification
 ```
 
-The optional Week 3 work also included a controlled web-authentication laboratory hosted on my own Kali Linux system.
+First, the required cybersecurity environment was prepared on **Kali Linux**. HexStrike AI was configured to provide the integration layer between the AI-assisted workflow and the security tools available within Kali Linux.
+
+Claude was then used as the AI interaction layer. Through HexStrike AI, the password-auditing workflow could interact with the tools running in the Kali Linux environment while John the Ripper remained responsible for the underlying password-recovery operation.
+
+An important concept demonstrated during this activity was the separation between the AI assistant, the integration layer, and the underlying security tool:
+
+```text
+Claude          → AI interaction and assistance
+HexStrike AI    → Security-tool integration and orchestration
+Kali Linux      → Security-tool execution environment
+John the Ripper → Password-auditing and password-recovery engine
+```
+
+The password-verification information associated with the protected laboratory resource was prepared in a John the Ripper-compatible format. Candidate passwords could then be evaluated by the password-auditing process.
+
+After the password-recovery operation completed, the resulting output was reviewed and the recovered password was verified against the original protected laboratory resource.
+
+The final verification workflow was:
+
+```text
+Password-Recovery Result
+        ↓
+Recovered Password
+        ↓
+Original Protected Resource
+        ↓
+Manual Verification
+        ↓
+Confirmed Result
+```
+
+Manual verification was an important part of the exercise because automated and AI-assisted security-tool output should be validated before being documented as a confirmed result.
+
+The three Week 3 password-cracking activities can be compared as follows:
+
+| Module | Password-Cracking Approach | Main Tools | Environment |
+|---|---|---|---|
+| **W3-PM1** | Direct password cracking | John the Ripper (JTR) | Kali Linux |
+| **W3-PM2** | Browser-based password cracking | NetworkWalks Hash Calculator + Password Cracker | Web Browser |
+| **W3-OPTIONAL1** | AI-assisted password cracking | Claude + HexStrike AI + John the Ripper | Kali Linux |
+
+W3-PM1 demonstrated the traditional command-line password-auditing workflow. W3-PM2 demonstrated a browser-based password-recovery workflow. W3-OPTIONAL1 demonstrated how Claude and HexStrike AI could be integrated with the Kali Linux environment to assist the same general password-auditing process while John the Ripper performed the underlying technical operation.
+
+The optional practical reinforced several important concepts:
+
+- Password strength directly affects resistance to password-cracking attacks.
+- Weak and predictable passwords may be susceptible to dictionary-based password recovery.
+- Password-verification information must be prepared correctly before it can be processed by John the Ripper.
+- Claude provides an AI interaction layer for the workflow.
+- HexStrike AI provides the security-tool integration layer.
+- John the Ripper remains the underlying password-auditing engine.
+- AI assistance does not replace the need to understand the tools and commands being executed.
+- Automated and AI-assisted results should be reviewed and manually verified.
+- Strong and unique passwords provide greater resistance to password-recovery attacks.
+- AI-assisted cybersecurity activities must remain within an explicitly authorized scope.
+
+Overall, W3-OPTIONAL1 provided hands-on experience combining **Claude, HexStrike AI, Kali Linux, and John the Ripper** within an AI-assisted password-auditing laboratory.
+
+All password-cracking activities documented in this optional module were performed as part of an authorized educational cybersecurity exercise.
+
+**W3-OPTIONAL1 Status:** ✅ Completed
+
+---
+
+### 4.4 W3-OPTIONAL2 – Web Authentication Password Testing & Mediroza Hospital Security Assessment
+
+**Status: 🟡 In Progress**
+
+W3-OPTIONAL2 extends the Week 3 practical activities from offline password auditing into **web-authentication password testing and security assessment using Kali Linux**.
+
+This optional activity currently consists of two clearly separated stages:
+
+1. A controlled localhost web-authentication laboratory used to validate the authentication-testing methodology.
+2. The Mediroza Hospital web-authentication assessment, which remains in progress.
+
+#### Stage 1 – Controlled Local Web-Authentication Laboratory
+
+Before continuing with the external assessment, I created and tested a controlled authentication application on my own Kali Linux system.
 
 The local application was available at:
 
@@ -184,7 +284,7 @@ The local application was available at:
 http://127.0.0.1/patient/login.php
 ```
 
-Because `127.0.0.1` is the loopback address, all credential-testing activity remained inside the locally controlled laboratory environment.
+Because `127.0.0.1` is the loopback address, all credential-testing activity performed during this stage remained inside my locally controlled laboratory environment.
 
 The local patient-login page contained username and password fields. An unsuccessful login attempt returned:
 
@@ -192,7 +292,7 @@ The local patient-login page contained username and password fields. An unsucces
 Invalid credentials
 ```
 
-This failure message was used as the failure condition during the controlled automated authentication test.
+This response was used as the failure condition during the controlled automated authentication test.
 
 Two small laboratory wordlists were prepared:
 
@@ -226,96 +326,23 @@ The terminal reported:
 1 of 1 target successfully completed, 1 valid password found
 ```
 
-The automated result was then manually verified through the local patient-login page. The identified username and password were entered into the form, and the application returned:
+The automated result was then manually verified through the local patient-login page. The identified username and password were entered into the application, which returned:
 
 ```text
 Login successful
 ```
 
-The manual verification confirmed that Hydra had identified a genuine valid credential rather than producing a false positive.
+The manual verification confirmed that Hydra had identified a genuine valid laboratory credential rather than a false positive.
 
-This controlled exercise demonstrated how weak credentials can be susceptible to dictionary-based authentication testing when candidate values are predictable. It also reinforced the importance of rate limiting, strong password policies, authentication monitoring, and manual verification of automated findings.
+The `hydra-lab / kali` credential belongs **exclusively to the deliberately configured localhost laboratory**. It is not presented as a credential or finding associated with the external Mediroza Hospital application.
 
-**W3-OPTIONAL1 Status:** ✅ Completed
+This controlled exercise demonstrated how weak credentials can be susceptible to dictionary-based authentication testing when candidate values are predictable. It also reinforced the importance of strong password policies, authentication monitoring, rate limiting, and manual verification of automated findings.
 
----
+#### Stage 2 – Mediroza Hospital Web Authentication Security Assessment
 
-### 4.4 W3-OPTIONAL2 – Mediroza Hospital Web Authentication Security Assessment
+After validating the authentication-testing methodology in the controlled localhost laboratory, I proceeded with the Mediroza Hospital web-authentication assessment.
 
-**Status: 🟡 In Progress**
-
-W3-OPTIONAL2 extends the Week 3 practical activities into web-authentication security assessment using Kali Linux.
-
-This optional activity currently consists of two clearly separated stages:
-
-1. A controlled localhost authentication laboratory used to validate the authentication-testing methodology.
-2. The Mediroza Hospital web-authentication assessment, which remains in progress.
-
-#### Stage 1 – Controlled Local Authentication Laboratory
-
-Before continuing with the external assessment, I created and tested a controlled authentication application on my own Kali Linux environment.
-
-The local application was available at:
-
-```text
-http://127.0.0.1/patient/login.php
-```
-
-Because `127.0.0.1` is the loopback address, the credential-testing activity remained inside my locally controlled laboratory environment.
-
-The local patient-login page contained username and password fields. An unsuccessful authentication attempt returned:
-
-```text
-Invalid credentials
-```
-
-This response was used as the failure condition during the controlled automated authentication test.
-
-Two small laboratory wordlists were prepared:
-
-```text
-6 usernames
-7 passwords
-42 possible credential combinations
-```
-
-THC Hydra was then used to test the candidate credentials against the local HTTP POST authentication form.
-
-```bash
-hydra -L ~/users.txt -P ~/passwords.txt 127.0.0.1 \
-http-post-form "/patient/login.php:username=^USER^&password=^PASS^:F=Invalid credentials" \
--V -f
-```
-
-Hydra processed the 42 possible combinations and identified the deliberately configured laboratory credential:
-
-```text
-Username: hydra-lab
-Password: kali
-```
-
-The terminal reported:
-
-```text
-[80][http-post-form] host: 127.0.0.1   login: hydra-lab   password: kali
-1 of 1 target successfully completed, 1 valid password found
-```
-
-The result was manually verified through the local patient-login page. The application returned:
-
-```text
-Login successful
-```
-
-This confirmed that the automated result was genuine rather than a false positive.
-
-The `hydra-lab / kali` credential belongs exclusively to the localhost laboratory and is not presented as a credential or finding associated with the external Mediroza Hospital application.
-
-#### Stage 2 – Mediroza Hospital Web Authentication Assessment
-
-After validating the methodology locally, I proceeded with the Mediroza Hospital web-authentication assessment.
-
-The web application observed during this activity is:
+The external web application observed during this activity is:
 
 ```text
 https://www.medirozahospital.com/
@@ -327,21 +354,23 @@ A patient authentication interface was observed at:
 /patient/login.php
 ```
 
-An unsuccessful authentication attempt produced:
+The interface presented username and password fields. An unsuccessful authentication attempt produced:
 
 ```text
 Invalid credentials
 ```
 
-During the ongoing assessment, the external website subsequently became inaccessible from Kali Linux. Connectivity troubleshooting was therefore performed before continuing.
+During the ongoing assessment, the external website subsequently became inaccessible from the Kali Linux environment. I therefore performed connectivity troubleshooting before continuing the assessment.
 
 #### Internet Connectivity Verification
+
+The following command was executed:
 
 ```bash
 ping -c 4 8.8.8.8
 ```
 
-Result:
+The result showed:
 
 ```text
 4 packets transmitted
@@ -349,15 +378,17 @@ Result:
 0% packet loss
 ```
 
-This confirmed that Kali Linux retained Internet connectivity.
+This confirmed that Kali Linux retained basic Internet connectivity.
 
 #### DNS Resolution Verification
+
+DNS resolution was then verified using:
 
 ```bash
 getent hosts www.medirozahospital.com
 ```
 
-Result:
+The hostname successfully resolved to:
 
 ```text
 199.188.201.16  medirozahospital.com www.medirozahospital.com
@@ -367,11 +398,13 @@ This confirmed that DNS resolution remained functional.
 
 #### HTTP Connectivity Verification
 
+TCP connectivity to HTTP port 80 was tested using:
+
 ```bash
 nc -vz -w 5 www.medirozahospital.com 80
 ```
 
-Result:
+The result was:
 
 ```text
 Connection refused
@@ -379,11 +412,13 @@ Connection refused
 
 #### HTTPS Connectivity Verification
 
+TCP connectivity to HTTPS port 443 was tested using:
+
 ```bash
 nc -vz -w 5 www.medirozahospital.com 443
 ```
 
-Result:
+The result was:
 
 ```text
 Connection refused
@@ -391,11 +426,13 @@ Connection refused
 
 #### HTTPS Request Verification
 
+An HTTPS request was attempted using cURL:
+
 ```bash
 curl -I --connect-timeout 10 https://www.medirozahospital.com/
 ```
 
-Result:
+The result was:
 
 ```text
 curl: (7) Failed to connect to www.medirozahospital.com port 443:
@@ -404,11 +441,23 @@ Could not connect to server
 
 #### Kali Linux Restart
 
-Kali Linux was restarted. Internet connectivity and DNS resolution continued to work, while HTTPS connectivity to the destination remained unavailable.
+Kali Linux was restarted to determine whether the connectivity condition originated from the virtual machine.
+
+After restarting:
+
+```text
+Internet Connectivity: Working
+DNS Resolution: Working
+HTTPS Connectivity: Still unavailable
+```
+
+The restart did not change the observed condition.
 
 #### Host Computer Restart
 
-The host computer was also restarted. After restart, Kali Linux again had working Internet connectivity and DNS resolution, but the external HTTP/HTTPS service remained unavailable during testing.
+The host computer was subsequently restarted as an additional troubleshooting measure.
+
+After the restart, Kali Linux again had working Internet connectivity and DNS resolution, but the external HTTP/HTTPS service remained unavailable during testing.
 
 #### Current Troubleshooting Summary
 
@@ -424,13 +473,13 @@ The host computer was also restarted. After restart, Kali Linux again had workin
 | Kali Linux restart | No change |
 | Host-computer restart | No change |
 
-The evidence establishes that Kali Linux retained Internet connectivity and successfully resolved the target hostname while HTTP and HTTPS connections were not being accepted at the time of testing.
+The available evidence establishes that the Kali Linux environment retained Internet connectivity and successfully resolved the target hostname while the tested HTTP and HTTPS connections were not being accepted at that time.
 
-The available evidence does not establish the underlying reason for the external service's unavailability. The condition is therefore documented as a troubleshooting observation rather than a confirmed vulnerability.
+The available evidence does not establish the underlying reason for the external service's unavailability. Therefore, the connectivity condition is documented as a **troubleshooting observation rather than a confirmed vulnerability**.
 
 #### W3-OPTIONAL2 Current Result
 
-The controlled localhost authentication laboratory was completed successfully and validated the authentication-testing methodology within the locally controlled environment.
+The controlled localhost authentication laboratory was completed successfully and demonstrated that the authentication-testing methodology functioned correctly within the locally controlled environment.
 
 The Mediroza Hospital assessment has not yet reached a final result because the external web service became unavailable during the ongoing activity.
 
@@ -439,6 +488,7 @@ Additional evidence and findings will be documented only after they are actually
 **W3-OPTIONAL2 Status:** 🟡 In Progress
 
 ---
+
 
 ## 5. Risk Analysis / Impact
 
