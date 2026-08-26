@@ -685,45 +685,6 @@ Place the W3-PM1 screenshots in chronological order under:
 ```text
 screenshots/W3-PM1/
 ```
-
-Recommended filenames:
-
-```text
-01-PDF1-Protected-File.png
-02-PDF1-Hash1-Extraction.png
-03-PDF1-JTR-Password-Cracking.png
-04-PDF1-Recovered-Password.png
-05-PDF1-Password-Verification.png
-
-06-PDF2-Protected-File.png
-07-PDF2-Hash2-Extraction.png
-08-PDF2-JTR-Password-Cracking.png
-09-PDF2-Recovered-Password.png
-10-PDF2-Password-Verification.png
-
-11-PDF3-Protected-File.png
-12-PDF3-Hash3-Extraction.png
-13-PDF3-JTR-Password-Cracking.png
-14-PDF3-Recovered-Password.png
-15-PDF3-Password-Verification.png
-```
-
-The README image references should follow this pattern:
-
-```markdown
-![W3-PM1 - PDF1 Protected File](screenshots/W3-PM1/01-PDF1-Protected-File.png)
-![W3-PM1 - PDF1 Hash1 Extraction](screenshots/W3-PM1/02-PDF1-Hash1-Extraction.png)
-![W3-PM1 - PDF1 JTR Password Cracking](screenshots/W3-PM1/03-PDF1-JTR-Password-Cracking.png)
-
-![W3-PM1 - PDF2 Protected File](screenshots/W3-PM1/06-PDF2-Protected-File.png)
-![W3-PM1 - PDF2 Hash2 Extraction](screenshots/W3-PM1/07-PDF2-Hash2-Extraction.png)
-![W3-PM1 - PDF2 JTR Password Cracking](screenshots/W3-PM1/08-PDF2-JTR-Password-Cracking.png)
-
-![W3-PM1 - PDF3 Protected File](screenshots/W3-PM1/11-PDF3-Protected-File.png)
-![W3-PM1 - PDF3 Hash3 Extraction](screenshots/W3-PM1/12-PDF3-Hash3-Extraction.png)
-![W3-PM1 - PDF3 JTR Password Cracking](screenshots/W3-PM1/13-PDF3-JTR-Password-Cracking.png)
-```
-
 Use the shared hash files stored under:
 
 ```text
@@ -821,32 +782,6 @@ Place the W3-PM2 screenshots in chronological order under:
 ```text
 screenshots/W3-PM2/
 ```
-
-Recommended filenames:
-
-```text
-01-PDF1-Protected-File.png
-02-PDF1-NetworkWalks-Hash-Calculator.png
-03-PDF1-Hash1-Result.png
-04-PDF1-Password-Cracker.png
-05-PDF1-Recovered-Password.png
-06-PDF1-Password-Verification.png
-
-07-PDF2-Protected-File.png
-08-PDF2-NetworkWalks-Hash-Calculator.png
-09-PDF2-Hash2-Result.png
-10-PDF2-Password-Cracker.png
-11-PDF2-Recovered-Password.png
-12-PDF2-Password-Verification.png
-
-13-PDF3-Protected-File.png
-14-PDF3-NetworkWalks-Hash-Calculator.png
-15-PDF3-Hash3-Result.png
-16-PDF3-Password-Cracker.png
-17-PDF3-Recovered-Password.png
-18-PDF3-Password-Verification.png
-```
-
 Use the shared hash files stored under:
 
 ```text
