@@ -75,7 +75,50 @@ The following tools and technologies were used during the Week 3 practical activ
 
 ## 4. Activities Performed
 
+### Week 3 Protected PDF / Hash Mapping
+
+The same three password-protected PDF files and their corresponding hash files are used across **W3-PM1, W3-PM2, and W3-OPTIONAL1**.
+
+| Protected PDF | Extracted Hash |
+|---|---|
+| `My Locked PDF1.pdf` | `hash1.txt` |
+| `My Locked PDF2.pdf` | `hash2.txt` |
+| `My Locked PDF3.pdf` | `hash3.txt` |
+
+Therefore, each of the three password-cracking modules uses all three pairs:
+
+```text
+My Locked PDF1.pdf → hash1.txt
+My Locked PDF2.pdf → hash2.txt
+My Locked PDF3.pdf → hash3.txt
+```
+
+The difference between the modules is the **password-recovery method**, not the files being tested:
+
+| Module | Password-Recovery Method |
+|---|---|
+| **W3-PM1** | John the Ripper (JTR) directly on Kali Linux |
+| **W3-PM2** | NetworkWalks Hash Calculator + NetworkWalks Password Cracker |
+| **W3-OPTIONAL1** | Claude + HexStrike AI + John the Ripper on Kali Linux |
+
+These PDF/hash pairs are **not part of W3-OPTIONAL2**, which is a separate web-authentication assessment activity.
+
+---
+
 ### 4.1 W3-PM1 – Password Cracking with John the Ripper (JTR)
+
+**Protected files used:** `My Locked PDF1.pdf`, `My Locked PDF2.pdf`, `My Locked PDF3.pdf`  
+**Corresponding hash files:** `hash1.txt`, `hash2.txt`, `hash3.txt`
+
+All three protected PDFs were included in the W3-PM1 John the Ripper exercise:
+
+```text
+My Locked PDF1.pdf → hash1.txt
+My Locked PDF2.pdf → hash2.txt
+My Locked PDF3.pdf → hash3.txt
+```
+
+Each hash file contains the password-verification information extracted from its corresponding protected PDF and is used during the JTR password-auditing workflow.
 
 I performed the W3-PM1 practical using **John the Ripper** directly within Kali Linux. The objective of the exercise was to recover the password protecting the supplied `My Locked PDF1.pdf` file and then verify the recovered password against the original protected document.
 
@@ -108,6 +151,19 @@ This exercise demonstrated that strong encryption alone does not compensate for 
 ---
 
 ### 4.2 W3-PM2 – Password Cracking with NetworkWalks Tools
+
+**Protected files used:** `My Locked PDF1.pdf`, `My Locked PDF2.pdf`, `My Locked PDF3.pdf`  
+**Corresponding hash files:** `hash1.txt`, `hash2.txt`, `hash3.txt`
+
+All three protected PDFs were included in the W3-PM2 NetworkWalks password-recovery exercise:
+
+```text
+My Locked PDF1.pdf → hash1.txt
+My Locked PDF2.pdf → hash2.txt
+My Locked PDF3.pdf → hash3.txt
+```
+
+The same three PDF/hash pairs were processed through the NetworkWalks Hash Calculator and Password Cracker workflow.
 
 I performed the second Week 3 practical using the browser-based **NetworkWalks Hash Calculator** and **NetworkWalks Password Cracker**.
 
@@ -148,6 +204,19 @@ This exercise reinforced the same password-security concept demonstrated in W3-P
 ---
 
 ### 4.3 W3-OPTIONAL1 – z. Optional Module Lab - JTR Password Cracking Lab v1 (AI-version)
+
+**Protected files used:** `My Locked PDF1.pdf`, `My Locked PDF2.pdf`, `My Locked PDF3.pdf`  
+**Corresponding hash files:** `hash1.txt`, `hash2.txt`, `hash3.txt`
+
+All three protected PDFs were included in the W3-OPTIONAL1 AI-assisted password-cracking exercise:
+
+```text
+My Locked PDF1.pdf → hash1.txt
+My Locked PDF2.pdf → hash2.txt
+My Locked PDF3.pdf → hash3.txt
+```
+
+Claude and HexStrike AI were used to assist the workflow on Kali Linux, while John the Ripper remained the underlying password-auditing tool.
 
 I completed the additional Week 3 optional practical titled:
 
@@ -577,6 +646,9 @@ Overall, Week 3 demonstrated that password security depends heavily on password 
 
 ### 8.1 W3-PM1 – Password Cracking with John the Ripper
 
+**Protected PDFs:** `My Locked PDF1.pdf`, `My Locked PDF2.pdf`, `My Locked PDF3.pdf`  
+**Hash files:** `hash1.txt`, `hash2.txt`, `hash3.txt`
+
 Evidence collected during W3-PM1 documents the complete password-recovery workflow performed with John the Ripper on Kali Linux.
 
 The evidence includes:
@@ -606,11 +678,68 @@ Password Recovery
 Manual PDF Verification
 ```
 
+#### Screenshot Placement
+
+Place the W3-PM1 screenshots in chronological order under:
+
+```text
+screenshots/W3-PM1/
+```
+
+Recommended filenames:
+
+```text
+01-PDF1-Protected-File.png
+02-PDF1-Hash1-Extraction.png
+03-PDF1-JTR-Password-Cracking.png
+04-PDF1-Recovered-Password.png
+05-PDF1-Password-Verification.png
+
+06-PDF2-Protected-File.png
+07-PDF2-Hash2-Extraction.png
+08-PDF2-JTR-Password-Cracking.png
+09-PDF2-Recovered-Password.png
+10-PDF2-Password-Verification.png
+
+11-PDF3-Protected-File.png
+12-PDF3-Hash3-Extraction.png
+13-PDF3-JTR-Password-Cracking.png
+14-PDF3-Recovered-Password.png
+15-PDF3-Password-Verification.png
+```
+
+The README image references should follow this pattern:
+
+```markdown
+![W3-PM1 - PDF1 Protected File](screenshots/W3-PM1/01-PDF1-Protected-File.png)
+![W3-PM1 - PDF1 Hash1 Extraction](screenshots/W3-PM1/02-PDF1-Hash1-Extraction.png)
+![W3-PM1 - PDF1 JTR Password Cracking](screenshots/W3-PM1/03-PDF1-JTR-Password-Cracking.png)
+
+![W3-PM1 - PDF2 Protected File](screenshots/W3-PM1/06-PDF2-Protected-File.png)
+![W3-PM1 - PDF2 Hash2 Extraction](screenshots/W3-PM1/07-PDF2-Hash2-Extraction.png)
+![W3-PM1 - PDF2 JTR Password Cracking](screenshots/W3-PM1/08-PDF2-JTR-Password-Cracking.png)
+
+![W3-PM1 - PDF3 Protected File](screenshots/W3-PM1/11-PDF3-Protected-File.png)
+![W3-PM1 - PDF3 Hash3 Extraction](screenshots/W3-PM1/12-PDF3-Hash3-Extraction.png)
+![W3-PM1 - PDF3 JTR Password Cracking](screenshots/W3-PM1/13-PDF3-JTR-Password-Cracking.png)
+```
+
+Use the shared hash files stored under:
+
+```text
+outputs/password-hashes/hash1.txt
+outputs/password-hashes/hash2.txt
+outputs/password-hashes/hash3.txt
+```
+
 **Status:** ✅ Completed
 
 ---
 
 ### 8.2 W3-PM2 – Password Cracking with NetworkWalks Tools
+
+**Protected PDFs:** `My Locked PDF1.pdf`, `My Locked PDF2.pdf`, `My Locked PDF3.pdf`  
+**Hash files:** `hash1.txt`, `hash2.txt`, `hash3.txt`
 
 Evidence collected during W3-PM2 documents the browser-based password-recovery process.
 
@@ -640,11 +769,55 @@ Recovered Password
 Manual Verification
 ```
 
+#### Screenshot Placement
+
+Place the W3-PM2 screenshots in chronological order under:
+
+```text
+screenshots/W3-PM2/
+```
+
+Recommended filenames:
+
+```text
+01-PDF1-Protected-File.png
+02-PDF1-NetworkWalks-Hash-Calculator.png
+03-PDF1-Hash1-Result.png
+04-PDF1-Password-Cracker.png
+05-PDF1-Recovered-Password.png
+06-PDF1-Password-Verification.png
+
+07-PDF2-Protected-File.png
+08-PDF2-NetworkWalks-Hash-Calculator.png
+09-PDF2-Hash2-Result.png
+10-PDF2-Password-Cracker.png
+11-PDF2-Recovered-Password.png
+12-PDF2-Password-Verification.png
+
+13-PDF3-Protected-File.png
+14-PDF3-NetworkWalks-Hash-Calculator.png
+15-PDF3-Hash3-Result.png
+16-PDF3-Password-Cracker.png
+17-PDF3-Recovered-Password.png
+18-PDF3-Password-Verification.png
+```
+
+Use the shared hash files stored under:
+
+```text
+outputs/password-hashes/hash1.txt
+outputs/password-hashes/hash2.txt
+outputs/password-hashes/hash3.txt
+```
+
 **Status:** ✅ Completed
 
 ---
 
 ### 8.3 W3-OPTIONAL1 – z. Optional Module Lab - JTR Password Cracking Lab v1 (AI-version)
+
+**Protected PDFs:** `My Locked PDF1.pdf`, `My Locked PDF2.pdf`, `My Locked PDF3.pdf`  
+**Hash files:** `hash1.txt`, `hash2.txt`, `hash3.txt`
 
 Evidence collected during W3-OPTIONAL1 documents the additional password-security practical work performed in Kali Linux.
 
@@ -696,6 +869,47 @@ Login successful
 ```
 
 The result was therefore independently validated.
+
+#### Screenshot Placement
+
+Place the W3-OPTIONAL1 screenshots in chronological order under:
+
+```text
+screenshots/W3-OPTIONAL1/
+```
+
+Recommended filenames:
+
+```text
+01-HexStrike-AI-Kali-Environment.png
+02-Claude-HexStrike-Integration.png
+
+03-PDF1-Protected-File.png
+04-PDF1-Hash1-Preparation.png
+05-PDF1-AI-Assisted-JTR.png
+06-PDF1-Recovered-Password.png
+07-PDF1-Password-Verification.png
+
+08-PDF2-Protected-File.png
+09-PDF2-Hash2-Preparation.png
+10-PDF2-AI-Assisted-JTR.png
+11-PDF2-Recovered-Password.png
+12-PDF2-Password-Verification.png
+
+13-PDF3-Protected-File.png
+14-PDF3-Hash3-Preparation.png
+15-PDF3-AI-Assisted-JTR.png
+16-PDF3-Recovered-Password.png
+17-PDF3-Password-Verification.png
+```
+
+Use the shared hash files stored under:
+
+```text
+outputs/password-hashes/hash1.txt
+outputs/password-hashes/hash2.txt
+outputs/password-hashes/hash3.txt
+```
 
 **Status:** ✅ Completed
 
@@ -880,6 +1094,36 @@ The Week 3 practical activities provided hands-on experience with:
 - Risk analysis.
 - Security recommendations.
 - Authorization and scope management.
+
+---
+
+## Recommended Repository Structure
+
+Use the following GitHub repository structure:
+
+```text
+networkwalks-B082-week3-Phase1-2/
+├── README.md
+│
+├── files/
+│   ├── My Locked PDF1.pdf
+│   ├── My Locked PDF2.pdf
+│   └── My Locked PDF3.pdf
+│
+├── outputs/
+│   └── password-hashes/
+│       ├── hash1.txt
+│       ├── hash2.txt
+│       └── hash3.txt
+│
+└── screenshots/
+    ├── W3-PM1/
+    ├── W3-PM2/
+    ├── W3-OPTIONAL1/
+    └── W3-OPTIONAL2/
+```
+
+The same three PDF/hash pairs are referenced by W3-PM1, W3-PM2, and W3-OPTIONAL1. The screenshots remain separated by module because each module demonstrates a different password-recovery method.
 
 ---
 
