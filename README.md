@@ -779,30 +779,26 @@ Place the W3-PM2 screenshots in chronological order under:
 screenshots/W3-PM2/
 ```
 
-Recommended filenames:
-
-```text
-01-PDF1-Protected-File.png
-02-PDF1-NetworkWalks-Hash-Calculator.png
-03-PDF1-Hash1-Result.png
-04-PDF1-Password-Cracker.png
-05-PDF1-Recovered-Password.png
-06-PDF1-Password-Verification.png
-
-07-PDF2-Protected-File.png
-08-PDF2-NetworkWalks-Hash-Calculator.png
-09-PDF2-Hash2-Result.png
-10-PDF2-Password-Cracker.png
-11-PDF2-Recovered-Password.png
-12-PDF2-Password-Verification.png
-
-13-PDF3-Protected-File.png
-14-PDF3-NetworkWalks-Hash-Calculator.png
-15-PDF3-Hash3-Result.png
-16-PDF3-Password-Cracker.png
-17-PDF3-Recovered-Password.png
-18-PDF3-Password-Verification.png
-```
+![W3-PM2 Evidence 1](screenshots/W3-PM2/1.png)
+![W3-PM2 Evidence 2](screenshots/W3-PM2/2.png)
+![W3-PM2 Evidence 3](screenshots/W3-PM2/3.png)
+![W3-PM2 Evidence 4](screenshots/W3-PM2/4.png)
+![W3-PM2 Evidence 5](screenshots/W3-PM2/5.png)
+![W3-PM2 Evidence 6](screenshots/W3-PM2/6.png)
+![W3-PM2 Evidence 7](screenshots/W3-PM2/7.png)
+![W3-PM2 Evidence 8](screenshots/W3-PM2/8.png)
+![W3-PM2 Evidence 9](screenshots/W3-PM2/9.png)
+![W3-PM2 Evidence 10](screenshots/W3-PM2/10.png)
+![W3-PM2 Evidence 11](screenshots/W3-PM2/11.png)
+![W3-PM2 Evidence 12](screenshots/W3-PM2/12.png)
+![W3-PM2 Evidence 13](screenshots/W3-PM2/13.png)
+![W3-PM2 Evidence 14](screenshots/W3-PM2/14.png)
+![W3-PM2 Evidence 15](screenshots/W3-PM2/15.png)
+![W3-PM2 Evidence 16](screenshots/W3-PM2/16.png)
+![W3-PM2 Evidence 17](screenshots/W3-PM2/17.png)
+![W3-PM2 Evidence 18](screenshots/W3-PM2/18.png)
+![W3-PM2 Evidence 19](screenshots/W3-PM2/19.png)
+![W3-PM2 Evidence 20](screenshots/W3-PM2/20.png)
 
 Use the shared hash files stored under:
 
@@ -880,30 +876,44 @@ Place the W3-OPTIONAL1 screenshots in chronological order under:
 screenshots/W3-OPTIONAL1/
 ```
 
-Recommended filenames:
-
-```text
-01-HexStrike-AI-Kali-Environment.png
-02-Claude-HexStrike-Integration.png
-
-03-PDF1-Protected-File.png
-04-PDF1-Hash1-Preparation.png
-05-PDF1-AI-Assisted-JTR.png
-06-PDF1-Recovered-Password.png
-07-PDF1-Password-Verification.png
-
-08-PDF2-Protected-File.png
-09-PDF2-Hash2-Preparation.png
-10-PDF2-AI-Assisted-JTR.png
-11-PDF2-Recovered-Password.png
-12-PDF2-Password-Verification.png
-
-13-PDF3-Protected-File.png
-14-PDF3-Hash3-Preparation.png
-15-PDF3-AI-Assisted-JTR.png
-16-PDF3-Recovered-Password.png
-17-PDF3-Password-Verification.png
-```
+![W3-OPTIONAL1 Evidence 1](screenshots/W3-OPTIONAL1/1.png)
+![W3-OPTIONAL1 Evidence 2](screenshots/W3-OPTIONAL1/2.png)
+![W3-OPTIONAL1 Evidence 3](screenshots/W3-OPTIONAL1/3.png)
+![W3-OPTIONAL1 Evidence 4](screenshots/W3-OPTIONAL1/4.png)
+![W3-OPTIONAL1 Evidence 5](screenshots/W3-OPTIONAL1/5.png)
+![W3-OPTIONAL1 Evidence 6](screenshots/W3-OPTIONAL1/6.png)
+![W3-OPTIONAL1 Evidence 7](screenshots/W3-OPTIONAL1/7.png)
+![W3-OPTIONAL1 Evidence 8](screenshots/W3-OPTIONAL1/8.png)
+![W3-OPTIONAL1 Evidence 9](screenshots/W3-OPTIONAL1/9.png)
+![W3-OPTIONAL1 Evidence 10](screenshots/W3-OPTIONAL1/10.png)
+![W3-OPTIONAL1 Evidence 11](screenshots/W3-OPTIONAL1/11.png)
+![W3-OPTIONAL1 Evidence 12](screenshots/W3-OPTIONAL1/12.png)
+![W3-OPTIONAL1 Evidence 13](screenshots/W3-OPTIONAL1/13.png)
+![W3-OPTIONAL1 Evidence 14](screenshots/W3-OPTIONAL1/14.png)
+![W3-OPTIONAL1 Evidence 15](screenshots/W3-OPTIONAL1/15.png)
+![W3-OPTIONAL1 Evidence 16](screenshots/W3-OPTIONAL1/16.png)
+![W3-OPTIONAL1 Evidence 17](screenshots/W3-OPTIONAL1/17.png)
+![W3-OPTIONAL1 Evidence 18](screenshots/W3-OPTIONAL1/18.png)
+![W3-OPTIONAL1 Evidence 19](screenshots/W3-OPTIONAL1/19.png)
+![W3-OPTIONAL1 Evidence 20](screenshots/W3-OPTIONAL1/20.png)
+![W3-OPTIONAL1 Evidence 21](screenshots/W3-OPTIONAL1/21.png)
+![W3-OPTIONAL1 Evidence 22](screenshots/W3-OPTIONAL1/22.png)
+![W3-OPTIONAL1 Evidence 23](screenshots/W3-OPTIONAL1/23.png)
+![W3-OPTIONAL1 Evidence 24](screenshots/W3-OPTIONAL1/24.png)
+![W3-OPTIONAL1 Evidence 25](screenshots/W3-OPTIONAL1/25.png)
+![W3-OPTIONAL1 Evidence 26](screenshots/W3-OPTIONAL1/26.png)
+![W3-OPTIONAL1 Evidence 27](screenshots/W3-OPTIONAL1/27.png)
+![W3-OPTIONAL1 Evidence 28](screenshots/W3-OPTIONAL1/28.png)
+![W3-OPTIONAL1 Evidence 29](screenshots/W3-OPTIONAL1/29.png)
+![W3-OPTIONAL1 Evidence 30](screenshots/W3-OPTIONAL1/30.png)
+![W3-OPTIONAL1 Evidence 31](screenshots/W3-OPTIONAL1/31.png)
+![W3-OPTIONAL1 Evidence 32](screenshots/W3-OPTIONAL1/32.png)
+![W3-OPTIONAL1 Evidence 33](screenshots/W3-OPTIONAL1/33.png)
+![W3-OPTIONAL1 Evidence 34](screenshots/W3-OPTIONAL1/34.png)
+![W3-OPTIONAL1 Evidence 35](screenshots/W3-OPTIONAL1/35.png)
+![W3-OPTIONAL1 Evidence 36](screenshots/W3-OPTIONAL1/36.png)
+![W3-OPTIONAL1 Evidence 37](screenshots/W3-OPTIONAL1/37.png)
+![W3-OPTIONAL1 Evidence 38](screenshots/W3-OPTIONAL1/38.png)
 
 Use the shared hash files stored under:
 
@@ -1014,6 +1024,96 @@ HTTP/80               : Connection refused
 HTTPS/443             : Connection refused
 Assessment Status     : IN PROGRESS
 ```
+![W3-OPTIONAL2 Evidence 1](screenshots/W3-OPTIONAL2/1.png)
+![W3-OPTIONAL2 Evidence 2](screenshots/W3-OPTIONAL2/2.png)
+![W3-OPTIONAL2 Evidence 3](screenshots/W3-OPTIONAL2/3.png)
+![W3-OPTIONAL2 Evidence 4](screenshots/W3-OPTIONAL2/4.png)
+![W3-OPTIONAL2 Evidence 5](screenshots/W3-OPTIONAL2/5.png)
+![W3-OPTIONAL2 Evidence 6](screenshots/W3-OPTIONAL2/6.png)
+![W3-OPTIONAL2 Evidence 7](screenshots/W3-OPTIONAL2/7.png)
+![W3-OPTIONAL2 Evidence 8](screenshots/W3-OPTIONAL2/8.png)
+![W3-OPTIONAL2 Evidence 9](screenshots/W3-OPTIONAL2/9.png)
+![W3-OPTIONAL2 Evidence 10](screenshots/W3-OPTIONAL2/10.png)
+![W3-OPTIONAL2 Evidence 11](screenshots/W3-OPTIONAL2/11.png)
+![W3-OPTIONAL2 Evidence 12](screenshots/W3-OPTIONAL2/12.png)
+![W3-OPTIONAL2 Evidence 13](screenshots/W3-OPTIONAL2/13.png)
+![W3-OPTIONAL2 Evidence 14](screenshots/W3-OPTIONAL2/14.png)
+![W3-OPTIONAL2 Evidence 15](screenshots/W3-OPTIONAL2/15.png)
+![W3-OPTIONAL2 Evidence 16](screenshots/W3-OPTIONAL2/16.png)
+![W3-OPTIONAL2 Evidence 17](screenshots/W3-OPTIONAL2/17.png)
+![W3-OPTIONAL2 Evidence 18](screenshots/W3-OPTIONAL2/18.png)
+![W3-OPTIONAL2 Evidence 19](screenshots/W3-OPTIONAL2/19.png)
+![W3-OPTIONAL2 Evidence 20](screenshots/W3-OPTIONAL2/20.png)
+![W3-OPTIONAL2 Evidence 21](screenshots/W3-OPTIONAL2/21.png)
+![W3-OPTIONAL2 Evidence 22](screenshots/W3-OPTIONAL2/22.png)
+![W3-OPTIONAL2 Evidence 23](screenshots/W3-OPTIONAL2/23.png)
+![W3-OPTIONAL2 Evidence 24](screenshots/W3-OPTIONAL2/24.png)
+![W3-OPTIONAL2 Evidence 25](screenshots/W3-OPTIONAL2/25.png)
+![W3-OPTIONAL2 Evidence 26](screenshots/W3-OPTIONAL2/26.png)
+![W3-OPTIONAL2 Evidence 27](screenshots/W3-OPTIONAL2/27.png)
+![W3-OPTIONAL2 Evidence 28](screenshots/W3-OPTIONAL2/28.png)
+![W3-OPTIONAL2 Evidence 29](screenshots/W3-OPTIONAL2/29.png)
+![W3-OPTIONAL2 Evidence 30](screenshots/W3-OPTIONAL2/30.png)
+![W3-OPTIONAL2 Evidence 31](screenshots/W3-OPTIONAL2/31.png)
+![W3-OPTIONAL2 Evidence 32](screenshots/W3-OPTIONAL2/32.png)
+![W3-OPTIONAL2 Evidence 33](screenshots/W3-OPTIONAL2/33.png)
+![W3-OPTIONAL2 Evidence 34](screenshots/W3-OPTIONAL2/34.png)
+![W3-OPTIONAL2 Evidence 35](screenshots/W3-OPTIONAL2/35.png)
+![W3-OPTIONAL2 Evidence 36](screenshots/W3-OPTIONAL2/36.png)
+![W3-OPTIONAL2 Evidence 37](screenshots/W3-OPTIONAL2/37.png)
+![W3-OPTIONAL2 Evidence 38](screenshots/W3-OPTIONAL2/38.png)
+![W3-OPTIONAL2 Evidence 39](screenshots/W3-OPTIONAL2/39.png)
+![W3-OPTIONAL2 Evidence 40](screenshots/W3-OPTIONAL2/40.png)
+![W3-OPTIONAL2 Evidence 41](screenshots/W3-OPTIONAL2/41.png)
+![W3-OPTIONAL2 Evidence 42](screenshots/W3-OPTIONAL2/42.png)
+![W3-OPTIONAL2 Evidence 43](screenshots/W3-OPTIONAL2/43.png)
+![W3-OPTIONAL2 Evidence 44](screenshots/W3-OPTIONAL2/44.png)
+![W3-OPTIONAL2 Evidence 45](screenshots/W3-OPTIONAL2/45.png)
+![W3-OPTIONAL2 Evidence 46](screenshots/W3-OPTIONAL2/46.png)
+![W3-OPTIONAL2 Evidence 47](screenshots/W3-OPTIONAL2/47.png)
+![W3-OPTIONAL2 Evidence 48](screenshots/W3-OPTIONAL2/48.png)
+![W3-OPTIONAL2 Evidence 49](screenshots/W3-OPTIONAL2/49.png)
+![W3-OPTIONAL2 Evidence 50](screenshots/W3-OPTIONAL2/50.png)
+![W3-OPTIONAL2 Evidence 51](screenshots/W3-OPTIONAL2/51.png)
+![W3-OPTIONAL2 Evidence 52](screenshots/W3-OPTIONAL2/52.png)
+![W3-OPTIONAL2 Evidence 53](screenshots/W3-OPTIONAL2/53.png)
+![W3-OPTIONAL2 Evidence 54](screenshots/W3-OPTIONAL2/54.png)
+![W3-OPTIONAL2 Evidence 55](screenshots/W3-OPTIONAL2/55.png)
+![W3-OPTIONAL2 Evidence 56](screenshots/W3-OPTIONAL2/56.png)
+![W3-OPTIONAL2 Evidence 57](screenshots/W3-OPTIONAL2/57.png)
+![W3-OPTIONAL2 Evidence 58](screenshots/W3-OPTIONAL2/58.png)
+![W3-OPTIONAL2 Evidence 59](screenshots/W3-OPTIONAL2/59.png)
+![W3-OPTIONAL2 Evidence 60](screenshots/W3-OPTIONAL2/60.png)
+![W3-OPTIONAL2 Evidence 61](screenshots/W3-OPTIONAL2/61.png)
+![W3-OPTIONAL2 Evidence 62](screenshots/W3-OPTIONAL2/62.png)
+![W3-OPTIONAL2 Evidence 63](screenshots/W3-OPTIONAL2/63.png)
+![W3-OPTIONAL2 Evidence 64](screenshots/W3-OPTIONAL2/64.png)
+![W3-OPTIONAL2 Evidence 65](screenshots/W3-OPTIONAL2/65.png)
+![W3-OPTIONAL2 Evidence 66](screenshots/W3-OPTIONAL2/66.png)
+![W3-OPTIONAL2 Evidence 67](screenshots/W3-OPTIONAL2/67.png)
+![W3-OPTIONAL2 Evidence 68](screenshots/W3-OPTIONAL2/68.png)
+![W3-OPTIONAL2 Evidence 69](screenshots/W3-OPTIONAL2/69.png)
+![W3-OPTIONAL2 Evidence 70](screenshots/W3-OPTIONAL2/70.png)
+![W3-OPTIONAL2 Evidence 71](screenshots/W3-OPTIONAL2/71.png)
+![W3-OPTIONAL2 Evidence 72](screenshots/W3-OPTIONAL2/72.png)
+![W3-OPTIONAL2 Evidence 73](screenshots/W3-OPTIONAL2/73.png)
+![W3-OPTIONAL2 Evidence 74](screenshots/W3-OPTIONAL2/74.png)
+![W3-OPTIONAL2 Evidence 75](screenshots/W3-OPTIONAL2/75.png)
+![W3-OPTIONAL2 Evidence 76](screenshots/W3-OPTIONAL2/76.png)
+![W3-OPTIONAL2 Evidence 77](screenshots/W3-OPTIONAL2/77.png)
+![W3-OPTIONAL2 Evidence 78](screenshots/W3-OPTIONAL2/78.png)
+![W3-OPTIONAL2 Evidence 79](screenshots/W3-OPTIONAL2/79.png)
+![W3-OPTIONAL2 Evidence 80](screenshots/W3-OPTIONAL2/80.png)
+![W3-OPTIONAL2 Evidence 81](screenshots/W3-OPTIONAL2/81.png)
+![W3-OPTIONAL2 Evidence 82](screenshots/W3-OPTIONAL2/82.png)
+![W3-OPTIONAL2 Evidence 83](screenshots/W3-OPTIONAL2/83.png)
+![W3-OPTIONAL2 Evidence 84](screenshots/W3-OPTIONAL2/84.png)
+![W3-OPTIONAL2 Evidence 85](screenshots/W3-OPTIONAL2/85.png)
+![W3-OPTIONAL2 Evidence 86](screenshots/W3-OPTIONAL2/86.png)
+![W3-OPTIONAL2 Evidence 87](screenshots/W3-OPTIONAL2/87.png)
+![W3-OPTIONAL2 Evidence 88](screenshots/W3-OPTIONAL2/88.png)
+![W3-OPTIONAL2 Evidence 89](screenshots/W3-OPTIONAL2/89.png)
+![W3-OPTIONAL2 Evidence 90](screenshots/W3-OPTIONAL2/90.png)
 
 Additional evidence will be appended as W3-OPTIONAL2 progresses.
 
