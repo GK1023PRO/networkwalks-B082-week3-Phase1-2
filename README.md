@@ -120,7 +120,7 @@ My Locked PDF3.pdf → hash3.txt
 
 Each hash file contains the password-verification information extracted from its corresponding protected PDF and is used during the JTR password-auditing workflow.
 
-I performed the W3-PM1 practical using **John the Ripper** directly within Kali Linux. The objective of the exercise was to recover the password protecting the supplied `My Locked PDF1.pdf` file and then verify the recovered password against the original protected document.
+I performed the W3-PM1 practical using **John the Ripper** directly within Kali Linux. The objective was to perform the assigned password-recovery workflow against all three protected files — `My Locked PDF1.pdf`, `My Locked PDF2.pdf`, and `My Locked PDF3.pdf` — using their corresponding `hash1.txt`, `hash2.txt`, and `hash3.txt` files, and then manually verify the recovered results against the original protected documents.
 
 The protected PDF could not be supplied directly to John the Ripper as a normal password string. Instead, password-verification information first had to be extracted from the PDF and converted into a format that John the Ripper could process.
 
@@ -634,7 +634,7 @@ In W3-PM1, I used John the Ripper within Kali Linux to perform password recovery
 
 In W3-PM2, I used the NetworkWalks Hash Calculator and Password Cracker to perform the same general password-recovery workflow through browser-based tools. The exercise reinforced the relationship between an encrypted document, its password-verification information, candidate-password testing, and manual verification.
 
-In W3-OPTIONAL1, **z. Optional Module Lab - JTR Password Cracking Lab v1 (AI-version)**, I reinforced the password-security and password-auditing concepts introduced in the main Week 3 modules. The additional controlled localhost authentication laboratory demonstrated automated credential testing against a deliberately configured weak account. Hydra tested 42 candidate combinations and identified the `hydra-lab / kali` credential pair. Manual browser authentication returned `Login successful`, confirming the automated finding.
+In W3-OPTIONAL1, **z. Optional Module Lab - JTR Password Cracking Lab v1 (AI-version)**, I extended the password-auditing workflow by using Claude and HexStrike AI with the Kali Linux environment while John the Ripper remained the underlying password-recovery tool. The same three protected PDFs and corresponding hash files used in W3-PM1 and W3-PM2 were included, and the recovered results were reviewed and manually verified.
 
 W3-OPTIONAL2 remains in progress. During its current stage, the Mediroza patient authentication interface was observed before the external web service became unavailable. Troubleshooting demonstrated that Kali Linux retained Internet connectivity and DNS resolution while HTTP and HTTPS connections were not being accepted during the subsequent tests. No unsupported conclusion regarding the cause of the remote service condition has been made.
 
@@ -685,6 +685,58 @@ Place the W3-PM1 screenshots in chronological order under:
 ```text
 screenshots/W3-PM1/
 ```
+
+Recommended filenames:
+
+```text
+01-PDF1-Protected-File.png
+02-PDF1-Hash1-Extraction.png
+03-PDF1-JTR-Password-Cracking.png
+04-PDF1-Recovered-Password.png
+05-PDF1-Password-Verification.png
+
+06-PDF2-Protected-File.png
+07-PDF2-Hash2-Extraction.png
+08-PDF2-JTR-Password-Cracking.png
+09-PDF2-Recovered-Password.png
+10-PDF2-Password-Verification.png
+
+11-PDF3-Protected-File.png
+12-PDF3-Hash3-Extraction.png
+13-PDF3-JTR-Password-Cracking.png
+14-PDF3-Recovered-Password.png
+15-PDF3-Password-Verification.png
+```
+
+The README image references should follow this pattern:
+
+```markdown
+![W3-PM1 - PDF1 Protected File](screenshots/W3-PM1/01-PDF1-Protected-File.png)
+![W3-PM1 - PDF1 Hash1 Extraction](screenshots/W3-PM1/02-PDF1-Hash1-Extraction.png)
+![W3-PM1 - PDF1 JTR Password Cracking](screenshots/W3-PM1/03-PDF1-JTR-Password-Cracking.png)
+
+![W3-PM1 - PDF2 Protected File](screenshots/W3-PM1/06-PDF2-Protected-File.png)
+![W3-PM1 - PDF2 Hash2 Extraction](screenshots/W3-PM1/07-PDF2-Hash2-Extraction.png)
+![W3-PM1 - PDF2 JTR Password Cracking](screenshots/W3-PM1/08-PDF2-JTR-Password-Cracking.png)
+
+![W3-PM1 - PDF3 Protected File](screenshots/W3-PM1/11-PDF3-Protected-File.png)
+![W3-PM1 - PDF3 Hash3 Extraction](screenshots/W3-PM1/12-PDF3-Hash3-Extraction.png)
+![W3-PM1 - PDF3 JTR Password Cracking](screenshots/W3-PM1/13-PDF3-JTR-Password-Cracking.png)
+```
+
+Use the shared hash files stored under:
+
+```text
+outputs/password-hashes/hash1.txt
+outputs/password-hashes/hash2.txt
+outputs/password-hashes/hash3.txt
+```
+
+
+#### Screenshot Evidence
+
+The screenshots are presented in their existing numbered order. **No screenshot filenames were renamed.**
+
 ![W3-PM1 Evidence 1](screenshots/W3-PM1/1.png)
 ![W3-PM1 Evidence 2](screenshots/W3-PM1/2.png)
 ![W3-PM1 Evidence 3](screenshots/W3-PM1/3.png)
@@ -724,15 +776,6 @@ screenshots/W3-PM1/
 ![W3-PM1 Evidence 37](screenshots/W3-PM1/37.png)
 ![W3-PM1 Evidence 38](screenshots/W3-PM1/38.png)
 ![W3-PM1 Evidence 39](screenshots/W3-PM1/39.png)
-
-
-Use the shared hash files stored under:
-
-```text
-outputs/password-hashes/hash1.txt
-outputs/password-hashes/hash2.txt
-outputs/password-hashes/hash3.txt
-```
 
 **Status:** ✅ Completed
 
@@ -779,6 +822,44 @@ Place the W3-PM2 screenshots in chronological order under:
 screenshots/W3-PM2/
 ```
 
+Recommended filenames:
+
+```text
+01-PDF1-Protected-File.png
+02-PDF1-NetworkWalks-Hash-Calculator.png
+03-PDF1-Hash1-Result.png
+04-PDF1-Password-Cracker.png
+05-PDF1-Recovered-Password.png
+06-PDF1-Password-Verification.png
+
+07-PDF2-Protected-File.png
+08-PDF2-NetworkWalks-Hash-Calculator.png
+09-PDF2-Hash2-Result.png
+10-PDF2-Password-Cracker.png
+11-PDF2-Recovered-Password.png
+12-PDF2-Password-Verification.png
+
+13-PDF3-Protected-File.png
+14-PDF3-NetworkWalks-Hash-Calculator.png
+15-PDF3-Hash3-Result.png
+16-PDF3-Password-Cracker.png
+17-PDF3-Recovered-Password.png
+18-PDF3-Password-Verification.png
+```
+
+Use the shared hash files stored under:
+
+```text
+outputs/password-hashes/hash1.txt
+outputs/password-hashes/hash2.txt
+outputs/password-hashes/hash3.txt
+```
+
+
+#### Screenshot Evidence
+
+The screenshots are presented in their existing numbered order. **No screenshot filenames were renamed.**
+
 ![W3-PM2 Evidence 1](screenshots/W3-PM2/1.png)
 ![W3-PM2 Evidence 2](screenshots/W3-PM2/2.png)
 ![W3-PM2 Evidence 3](screenshots/W3-PM2/3.png)
@@ -800,14 +881,6 @@ screenshots/W3-PM2/
 ![W3-PM2 Evidence 19](screenshots/W3-PM2/19.png)
 ![W3-PM2 Evidence 20](screenshots/W3-PM2/20.png)
 
-Use the shared hash files stored under:
-
-```text
-outputs/password-hashes/hash1.txt
-outputs/password-hashes/hash2.txt
-outputs/password-hashes/hash3.txt
-```
-
 **Status:** ✅ Completed
 
 ---
@@ -817,64 +890,21 @@ outputs/password-hashes/hash3.txt
 **Protected PDFs:** `My Locked PDF1.pdf`, `My Locked PDF2.pdf`, `My Locked PDF3.pdf`  
 **Hash files:** `hash1.txt`, `hash2.txt`, `hash3.txt`
 
-Evidence collected during W3-OPTIONAL1 documents the additional password-security practical work performed in Kali Linux.
+Evidence collected during W3-OPTIONAL1 documents the **AI-assisted password-cracking workflow using Claude, HexStrike AI, John the Ripper, and Kali Linux**.
 
-The optional evidence includes password-auditing activities and the additional controlled localhost authentication laboratory.
-
-The local authentication target was:
+All three PDF/hash pairs were used:
 
 ```text
-http://127.0.0.1/patient/login.php
+My Locked PDF1.pdf → hash1.txt
+My Locked PDF2.pdf → hash2.txt
+My Locked PDF3.pdf → hash3.txt
 ```
 
-The unsuccessful authentication indicator was:
+The evidence includes the Kali Linux environment, Claude interaction, HexStrike AI integration, John the Ripper password-auditing operations, all three PDF/hash pairs, recovered-password results, and manual verification.
 
-```text
-Invalid credentials
-```
+#### Screenshot Evidence
 
-The controlled candidate set contained:
-
-```text
-6 usernames × 7 passwords = 42 combinations
-```
-
-The Hydra command used in the localhost laboratory was:
-
-```bash
-hydra -L ~/users.txt -P ~/passwords.txt 127.0.0.1 \
-http-post-form "/patient/login.php:username=^USER^&password=^PASS^:F=Invalid credentials" \
--V -f
-```
-
-Hydra identified:
-
-```text
-Username: hydra-lab
-Password: kali
-```
-
-The terminal reported:
-
-```text
-1 valid password found
-```
-
-Manual browser verification returned:
-
-```text
-Login successful
-```
-
-The result was therefore independently validated.
-
-#### Screenshot Placement
-
-Place the W3-OPTIONAL1 screenshots in chronological order under:
-
-```text
-screenshots/W3-OPTIONAL1/
-```
+The screenshots are presented in their existing numbered order. **No screenshot filenames were renamed.**
 
 ![W3-OPTIONAL1 Evidence 1](screenshots/W3-OPTIONAL1/1.png)
 ![W3-OPTIONAL1 Evidence 2](screenshots/W3-OPTIONAL1/2.png)
@@ -915,7 +945,7 @@ screenshots/W3-OPTIONAL1/
 ![W3-OPTIONAL1 Evidence 37](screenshots/W3-OPTIONAL1/37.png)
 ![W3-OPTIONAL1 Evidence 38](screenshots/W3-OPTIONAL1/38.png)
 
-Use the shared hash files stored under:
+The shared hash files are stored under:
 
 ```text
 outputs/password-hashes/hash1.txt
@@ -1024,6 +1054,12 @@ HTTP/80               : Connection refused
 HTTPS/443             : Connection refused
 Assessment Status     : IN PROGRESS
 ```
+
+
+#### Screenshot Evidence
+
+The screenshots are presented in their existing numbered order. **No screenshot filenames were renamed.**
+
 ![W3-OPTIONAL2 Evidence 1](screenshots/W3-OPTIONAL2/1.png)
 ![W3-OPTIONAL2 Evidence 2](screenshots/W3-OPTIONAL2/2.png)
 ![W3-OPTIONAL2 Evidence 3](screenshots/W3-OPTIONAL2/3.png)
